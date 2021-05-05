@@ -41,6 +41,7 @@ var lyr_Milano_mortalita_2 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_Milano_mortalita_2, 
                 style: style_Milano_mortalita_2,
+                'opacity': 0.800000,
                 interactive: true,
     title: 'Milano_mortalita<br />\
     <img src="styles/legend/Milano_mortalita_2_0.png" /> 0 - 20<br />\

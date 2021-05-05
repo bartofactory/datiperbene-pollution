@@ -90,6 +90,18 @@ function legendTemplate(){
         return legendTemplateMortalita();
 }
 
+function toggleBottomSheet(){
+    if(document.getElementsByClassName('invisible').length > 0){
+        document.getElementsByClassName('invisible')[0].classList.add('visible');
+        document.getElementsByClassName('invisible')[0].classList.remove('invisible');
+    }else if(document.getElementsByClassName('visible').length > 0){
+        document.getElementsByClassName('visible')[0].classList.add('invisible');
+        document.getElementsByClassName('visible')[0].classList.remove('visible');
+    }
+    
+}
+
 function loadLegend(){
     goToMortalita();
 }
+

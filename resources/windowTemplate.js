@@ -90,67 +90,76 @@ function windowTemplate(params){
 }
 
 function legendTemplateMortalita(){
-    return `<div id="infoBox">
+    return `<div id="infoBox" onclick="toggleBottomSheet()">
         <section id="header">
             <div class="row space-between">
-                <h1 class="zoneName">Mortalità per NOx</h1>
+                <h1 class="zoneName">Mortalità per NO2</h1>
             </div>
-        </section>
-
-        <section id="content">
             <div id="note">
-                <div class="row"><h3>Legenda (µg/m<small><sup>3</sup></small>)</h3></div>
-                
+                <div class="row"><span>Seleziona un quartiere per scoprirne il dettaglio.</span></div>
             </div>
+        </section>
 
-            <div id="legend" class="row space-around data">
-                <div><img src="styles/legend/Milano_mortalita_2_0.png" /> <br/>0 - 20</div>
-                <div><img src="styles/legend/Milano_mortalita_2_1.png" /> <br/>20 - 40</div>
-                <div><img src="styles/legend/Milano_mortalita_2_2.png" /> <br/>40 - 60</div>
-                <div><img src="styles/legend/Milano_mortalita_2_3.png" /> <br/>60 - 80</div>
-                <div><img src="styles/legend/Milano_mortalita_2_4.png" /> <br/>80 - 100</div>
-                <div><img src="styles/legend/Milano_mortalita_2_5.png" /> <br/>100 - 120</div>
-                <div><img src="styles/legend/Milano_mortalita_2_6.png" /> <br/>120 - 139</div>
-            </div>
-        </section>
-        <section id="footer">
-            <div class="row">
-                <span id="mapToggle">
-                    <span class="btn" onclick="goToNOx()">Concentrazione NOx</a>
-                </span>
-        </section>
+        <div class="invisible">
+            <section id="content">
+                <div id="note">
+                    <div class="row"><h3>Legenda</h3></div>
+                    <div id="note">
+                        <div class="row"><span>Numeri riferiti ai decessi su 100 mila abitanti</span></div>
+                    </div>
+                    
+                </div>
+
+                <div id="legend" class="row space-around data">
+                    <div><img src="styles/legend/Milano_mortalita_2_0.png" /> <br/>0 - 20</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_1.png" /> <br/>20 - 40</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_2.png" /> <br/>40 - 60</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_3.png" /> <br/>60 - 80</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_4.png" /> <br/>80 - 100</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_5.png" /> <br/>100 - 120</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_6.png" /> <br/>120 - 139</div>
+                </div>
+            </section>
+            <section id="footer">
+                <div class="row">
+                    <span id="mapToggle">
+                        <span class="btn" onclick="goToNOx()">Visualizza la concentrazione NO2</a>
+                    </span>
+            </section>
+        </div>
     </div>`
 }
 
 function legendTemplateNOx(){
-    return `<div id="infoBox">
+    return `<div id="infoBox" onclick="toggleBottomSheet()">
         <section id="header">
             <div class="row space-between">
                 <h1 class="zoneName">Concentrazione di NOx</h1>
             </div>
         </section>
+        <div class="invisible">
+            <section id="content">
+                <div id="note">
+                    <div class="row"><h3>Legenda (µg/m<small><sup>3</sup></small>)</h3></div>
+                    
+                </div>
 
-        <section id="content">
-            <div id="note">
-                <div class="row"><h3>Legenda (µg/m<small><sup>3</sup></small>)</h3></div>
-                
-            </div>
-
-            <div id="legend" class="row space-around data">
-                <div><img src="styles/legend/Milano_mortalita_2_0.png" /> <br/>0 - 20</div>
-                <div><img src="styles/legend/Milano_mortalita_2_1.png" /> <br/>20 - 40</div>
-                <div><img src="styles/legend/Milano_mortalita_2_2.png" /> <br/>40 - 60</div>
-                <div><img src="styles/legend/Milano_mortalita_2_3.png" /> <br/>60 - 80</div>
-                <div><img src="styles/legend/Milano_mortalita_2_4.png" /> <br/>80 - 100</div>
-                <div><img src="styles/legend/Milano_mortalita_2_5.png" /> <br/>100 - 120</div>
-                <div><img src="styles/legend/Milano_mortalita_2_6.png" /> <br/>120 - 139</div>
-            </div>
-        </section>
-        <section id="footer">
-            <div class="row" style="text-align:center">
-                <span id="mapToggle">
-                    <a class="btn" onClick="goToMortalita()">Mortalità per NOx</a>
-                </span>
-        </section>
+                <div id="legend" class="row space-around data">
+                    <div><img src="styles/legend/Milano_mortalita_2_0.png" /> <br/>0 - 20</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_1.png" /> <br/>20 - 40</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_2.png" /> <br/>40 - 60</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_3.png" /> <br/>60 - 80</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_4.png" /> <br/>80 - 100</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_5.png" /> <br/>100 - 120</div>
+                    <div><img src="styles/legend/Milano_mortalita_2_6.png" /> <br/>120 - 139</div>
+                </div>
+            </section>
+            <section id="footer">
+                <div class="row" style="text-align:center">
+                    <span id="mapToggle">
+                        <a class="btn" onClick="goToMortalita()">Visualizza la mortalità per NO2</a>
+                    </span>
+            </section>
+        </div>
     </div>`
 }
