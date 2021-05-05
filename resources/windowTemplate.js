@@ -144,14 +144,14 @@ function legendTemplateNOx(){
                     
                 </div>
 
-                <div id="legend" class="row space-around data">
-                    <div><img src="styles/legend/Milano_mortalita_2_0.png" /> <br/>0 - 20</div>
-                    <div><img src="styles/legend/Milano_mortalita_2_1.png" /> <br/>20 - 40</div>
-                    <div><img src="styles/legend/Milano_mortalita_2_2.png" /> <br/>40 - 60</div>
-                    <div><img src="styles/legend/Milano_mortalita_2_3.png" /> <br/>60 - 80</div>
-                    <div><img src="styles/legend/Milano_mortalita_2_4.png" /> <br/>80 - 100</div>
-                    <div><img src="styles/legend/Milano_mortalita_2_5.png" /> <br/>100 - 120</div>
-                    <div><img src="styles/legend/Milano_mortalita_2_6.png" /> <br/>120 - 139</div>
+                <div id="legendGradient" class="row space-around data">
+                    <div>
+                        <img src="./images/gradient_NO2.jpeg" class="gradient"/> 
+                        <div class="row space-between">
+                            <span>20</span>
+                            <span>60</span>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="footer">
