@@ -58,7 +58,7 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-         maxZoom: 18, minZoom: 12
+         maxZoom: 20, minZoom: 10, zoom: 12
     })
 });
 
@@ -432,7 +432,7 @@ geolocation.setTracking(true);
 
 var geocoder = new Geocoder('nominatim', {
   provider: 'osm',
-  lang: 'en-US',
+  lang: 'it-IT',
   placeholder: 'Search for ...',
   limit: 5,
   keepOpen: true

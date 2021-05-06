@@ -1,10 +1,11 @@
+
 html, body {
     background-color: #ffffff;
 }
 .ol-control button {
     background-color: #f8f8f8 !important;
     color: #000000 !important;
-    border-radius: 0px !important;
+    border-radius: 5px !important;
 }
 .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
     background-color: rgba(255,255,255,.4) !important;
@@ -30,13 +31,6 @@ html, body {
   }
 /* --- */
 
-.geolocate {
-    top: 65px;
-    left: .5em;
-}
-.ol-touch .geolocate {
-    top: 80px;
-}
 
 html, body, #map {
     width: 100%;
@@ -199,30 +193,6 @@ div#note{
     margin-top: 20px;
 }
 
-@media (min-width: 320px) and (max-width: 710px) {
-
-    div#infoBox{
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-        left: 0px;
-        width: 90%;
-        max-width:100%;
-        border-radius: 5px 5px 0px 0px;
-        -webkit-box-shadow: 5px 5px 0px -5px rgba(0,0,0,0.3); 
-        box-shadow: 5px 5px 0px -5px rgba(0,0,0,0.3);
-    }
-
-
-    div.invisible{
-        display: none;
-    }
-
-    div.visible{
-        display: block;
-    }
-
-}
 #legend div{
     padding: 10px 15px;
     border-right: 1px dashed rgb(224, 224, 224);
@@ -271,4 +241,128 @@ img.gradient{
     height: 20px;
     width: 100%;
     object-fit: cover;
+}
+
+#gcd-input-query{
+    width: 350px;
+    height: 25px;
+    border: none;
+    padding: 5px;
+}
+.gcd-gl-control{
+    margin-left: 20px;
+}
+#gcd-button-control{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 3px;
+    top: 4px;
+    border-radius: 5px;
+    background-color: white !important;
+}
+
+/* .gcd-gl-expanded{
+    margin: 20px;
+    border: 2px solid #dadada;
+} */
+
+.geolocate{
+    top: none;
+    bottom: 20px !important;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+}
+.geolocate button{
+    width: 30px;
+    height: 30px;
+}
+
+.ol-zoom{
+    bottom: 60px !important;
+    left: 20px !important;
+}
+
+.ol-zoom button{
+    width: 30px;
+    height: 30px;
+}
+
+ul.gcd-gl-result{
+    position: relative;
+    top: 45px;
+    background-color: white;
+    width: 320px;
+    margin-left: 20px;
+    border-radius: 5px;
+    list-style-type:none;
+
+}
+ul.gcd-gl-result > li{
+    margin: 0; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: -40px;
+    padding: 10px 0px;
+}
+
+ul.gcd-gl-result > li > a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #2c2c2c;
+    padding: 0px 10px;
+}
+
+ul.gcd-gl-result > li:hover{
+    background-color: #e6e6e6;
+}
+
+@media (min-width: 320px) and (max-width: 710px) {
+
+    div#infoBox{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        width: 90%;
+        max-width:100%;
+        border-radius: 5px 5px 0px 0px;
+        -webkit-box-shadow: 5px 5px 0px -5px rgba(0,0,0,0.3); 
+        box-shadow: 5px 5px 0px -5px rgba(0,0,0,0.3);
+    }
+
+
+    div.invisible{
+        display: none;
+    }
+
+    div.visible{
+        display: block;
+    }
+
+    #gcd-input-query{
+        width: 90vw;
+    }
+
+    .gcd-gl-control{
+        margin: 10px;
+    }
+
+    .geolocate{
+        bottom: 110px !important;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .geolocate button{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .ol-zoom{
+        bottom: 150px !important;
+        left: 10px !important;
+    }
 }
