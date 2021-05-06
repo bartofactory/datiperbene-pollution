@@ -66,11 +66,13 @@ function openWindow(htmlContent){
 function visibleOnlyMortalita(){
     lyr_MI_NO2_1.setVisible(false);
     lyr_Milano_mortalita_2.setVisible(true);
+    document.title = 'Mortalità Per NO2 a Milano'
 }
 
 function visibileOnlyNOx(){
     lyr_MI_NO2_1.setVisible(true);
     lyr_Milano_mortalita_2.setVisible(false);
+    document.title = 'Concentrazione di NO2 a Milano'
 }
 
 function goToNOx(){
