@@ -366,3 +366,13 @@ ul.gcd-gl-result > li:hover{
         left: 10px !important;
     }
 }
+    
+@media (min-width: 250px) and (max-width: 320px) {
+    h1{
+        font-size: 28px;
+    }
+
+    div#note{
+        font-size: 12px;
+    }
+}
