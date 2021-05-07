@@ -433,7 +433,7 @@ geolocation.setTracking(true);
 var geocoder = new Geocoder('nominatim', {
   provider: 'osm',
   lang: 'it-IT',
-  placeholder: 'Inserisci il tuo indirizzo...',
+  placeholder: 'Inserisci il tuo indirizzo e premi invio',
   limit: 5,
   keepOpen: true
 });
