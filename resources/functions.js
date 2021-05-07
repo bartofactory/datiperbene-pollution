@@ -93,12 +93,19 @@ function legendTemplate(){
 }
 
 function toggleBottomSheet(){
+    var arrowUp = document.getElementsByClassName('gg-chevron-up')[0]
+    var arrowDown = document.getElementsByClassName('gg-chevron-down')[0]
+
     if(document.getElementsByClassName('invisible').length > 0){
         document.getElementsByClassName('invisible')[0].classList.add('visible');
         document.getElementsByClassName('invisible')[0].classList.remove('invisible');
+        arrowUp.classList.add('gg-chevron-down')
+        arrowUp.classList.remove('gg-chevron-up')
     }else if(document.getElementsByClassName('visible').length > 0){
         document.getElementsByClassName('visible')[0].classList.add('invisible');
         document.getElementsByClassName('visible')[0].classList.remove('visible');
+        arrowDown.classList.add('gg-chevron-up')
+        arrowDown.classList.remove('gg-chevron-down')
     }
     
 }
@@ -106,4 +113,3 @@ function toggleBottomSheet(){
 function loadLegend(){
     goToMortalita();
 }
-

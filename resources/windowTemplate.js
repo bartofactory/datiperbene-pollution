@@ -93,7 +93,7 @@ function legendTemplateMortalita(){
     return `<div id="infoBox" onclick="toggleBottomSheet()">
         <section id="header">
             <div class="row space-between">
-                <h1 class="zoneName">Mortalità per NO2</h1>
+                <h1 class="zoneName">Mortalità per NO2</h1><i class="chevron gg-chevron-up"></i>
             </div>
             <div id="note">
                 <div class="row"><span>Seleziona un quartiere per scoprirne il dettaglio.</span></div>
@@ -134,7 +134,7 @@ function legendTemplateNOx(){
     return `<div id="infoBox" onclick="toggleBottomSheet()">
         <section id="header">
             <div class="row space-between">
-                <h1 class="zoneName">Concentrazione di NO2</h1>
+                <h1 class="zoneName">Concentrazione di NO2</h1><i class="chevron gg-chevron-up"></i>
             </div>
         </section>
         <div class="invisible">

@@ -319,6 +319,10 @@ ul.gcd-gl-result > li:hover{
     background-color: #e6e6e6;
 }
 
+.chevron{
+    visibility: hidden;
+}
+
 @media (min-width: 320px) and (max-width: 710px) {
 
     div#infoBox{
@@ -365,6 +369,10 @@ ul.gcd-gl-result > li:hover{
         bottom: 150px !important;
         left: 10px !important;
     }
+
+    .chevron{
+        visibility: visible;
+    }
 }
     
 @media (min-width: 250px) and (max-width: 320px) {
@@ -374,5 +382,9 @@ ul.gcd-gl-result > li:hover{
 
     div#note{
         font-size: 12px;
+    }
+
+    .chevron{
+        visibility: visible;
     }
 }
