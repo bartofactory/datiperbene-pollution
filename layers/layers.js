@@ -27,7 +27,7 @@ var lyr_MI_NO2_1 = new ol.layer.Image({
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
-                                imageExtent: [1007481.109129, 5683401.844363, 1032303.818043, 5706381.939219]
+                                imageExtent: [1360005.072297, 5108901.027018, 1432151.705687, 5183929.681828]
                             })
                         });
 var format_Milano_mortalita_2 = new ol.format.GeoJSON();
@@ -50,14 +50,17 @@ var lyr_Milano_mortalita_2 = new ol.layer.Vector({
     <img src="styles/legend/Milano_mortalita_2_3.png" /> 60 - 80<br />\
     <img src="styles/legend/Milano_mortalita_2_4.png" /> 80 - 100<br />\
     <img src="styles/legend/Milano_mortalita_2_5.png" /> 100 - 120<br />\
-    <img src="styles/legend/Milano_mortalita_2_6.png" /> 120 - 139<br />'
+    <img src="styles/legend/Milano_mortalita_2_6.png" /> 120 - 140<br />\
+    <img src="styles/legend/Milano_mortalita_2_7.png" /> 140 - 160<br />\
+    <img src="styles/legend/Milano_mortalita_2_8.png" /> 160 - 180<br />\
+    <img src="styles/legend/Milano_mortalita_2_9.png" /> 180 - 199<br />'
         });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_MI_NO2_1.setVisible(true);lyr_Milano_mortalita_2.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_MI_NO2_1,lyr_Milano_mortalita_2];
-lyr_Milano_mortalita_2.set('fieldAliases', {'ID_NIL': 'ID_NIL', 'AreaHA': 'AreaHA', 'AreaMQ': 'AreaMQ', 'NIL_lower': 'NIL_lower', 'Pop': 'Pop', 'c20_tasso': 'c20_tasso', 'c40_tasso': 'c40_tasso', });
-lyr_Milano_mortalita_2.set('fieldImages', {'ID_NIL': 'Range', 'AreaHA': 'TextEdit', 'AreaMQ': 'TextEdit', 'NIL_lower': 'TextEdit', 'Pop': 'TextEdit', 'c20_tasso': 'TextEdit', 'c40_tasso': 'TextEdit', });
-lyr_Milano_mortalita_2.set('fieldLabels', {'ID_NIL': 'inline label', 'AreaHA': 'inline label', 'AreaMQ': 'inline label', 'NIL_lower': 'header label', 'Pop': 'inline label', 'c20_tasso': 'header label', 'c40_tasso': 'inline label', });
-lyr_Milano_mortalita_2.on('precompose', function(evt) {
-    evt.context.globalCompositeOperation = 'normal';
-});
+        lyr_OpenStreetMap_0.setVisible(true);lyr_MI_NO2_1.setVisible(true);lyr_Milano_mortalita_2.setVisible(true);
+        var layersList = [lyr_OpenStreetMap_0,lyr_MI_NO2_1,lyr_Milano_mortalita_2];
+        lyr_Milano_mortalita_2.set('fieldAliases', {'ID_NIL': 'ID_NIL', 'AreaHA': 'AreaHA', 'AreaMQ': 'AreaMQ', 'NIL_lower': 'NIL_lower', 'Pop': 'Pop', 'c20_tasso': 'c20_tasso', 'c40_tasso': 'c40_tasso', });
+        lyr_Milano_mortalita_2.set('fieldImages', {'ID_NIL': 'Range', 'AreaHA': 'TextEdit', 'AreaMQ': 'TextEdit', 'NIL_lower': 'TextEdit', 'Pop': 'TextEdit', 'c20_tasso': 'TextEdit', 'c40_tasso': 'TextEdit', });
+        lyr_Milano_mortalita_2.set('fieldLabels', {'ID_NIL': 'inline label', 'AreaHA': 'inline label', 'AreaMQ': 'inline label', 'NIL_lower': 'header label', 'Pop': 'inline label', 'c20_tasso': 'header label', 'c40_tasso': 'inline label', });
+        lyr_Milano_mortalita_2.on('precompose', function(evt) {
+            evt.context.globalCompositeOperation = 'normal';
+        });
