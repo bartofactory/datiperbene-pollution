@@ -14,4 +14,4 @@ jobs:
         server: ftp.globalshapersmilano.com
         username: 8838917@aruba.it
         password: ${{ secrets.FTPPASSWORD }}
-        server-dir: ./milanair
+        server-dir: ./milanair/
