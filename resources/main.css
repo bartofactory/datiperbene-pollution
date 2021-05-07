@@ -114,6 +114,10 @@ div#infoBox .row{
     text-align: center;
 }
 
+.dataLegend{
+    text-align: left;
+}
+
 .divValue{
     display: block;
     min-height: 100%;
@@ -195,7 +199,6 @@ div#note{
 
 #legend div{
     padding: 10px 15px;
-    border-right: 1px dashed rgb(224, 224, 224);
     margin-top: 10px;
 }
 
