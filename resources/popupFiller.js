@@ -16,8 +16,6 @@ function generatePopup(event){
     }
 
     event.forEach(evt => {
-        console.log(evt)
-        console.log(evt.values_)
         params.zoneName = evt.values_.NIL_lower || ''
         params.population = evt.values_.Pop || ''
         params.died100.confidenceHigh = Math.round(evt.values_.c20_upper)
