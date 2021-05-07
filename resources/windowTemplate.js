@@ -134,7 +134,7 @@ function legendTemplateNOx(){
     return `<div id="infoBox" onclick="toggleBottomSheet()">
         <section id="header">
             <div class="row space-between">
-                <h1 class="zoneName">Concentrazione di NOx</h1>
+                <h1 class="zoneName">Concentrazione di NO2</h1>
             </div>
         </section>
         <div class="invisible">
