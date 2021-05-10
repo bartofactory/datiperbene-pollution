@@ -153,8 +153,8 @@ function legendTemplateNOx(){
                     <div>
                         <img src="./images/gradient_NO2.jpeg" class="gradient"/> 
                         <div class="row space-between">
-                            <span>32,7</span>
-                            <span>59,3</span>
+                            <span>20</span>
+                            <span>60</span>
                         </div>
                     </div>
                 </div>
