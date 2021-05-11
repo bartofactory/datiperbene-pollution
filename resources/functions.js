@@ -111,5 +111,15 @@ function toggleBottomSheet(){
 }
 
 function loadLegend(){
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
     goToMortalita();
+
+    if(urlParams.get('no-overlay') === 'true'){
+        var controls = document.getElementsByClassName('ol-control')
+        document.getElementById('modal').style.display = 'none'
+        for(var i = 0; i < controls.length; i++)
+            controls[i].style.display = 'none'
+    }
 }

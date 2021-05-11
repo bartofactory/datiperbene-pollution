@@ -126,6 +126,13 @@ function legendTemplateMortalita(){
                         <img src="styles/legend/Milano_mortalita_2_9.png" />  180 - 199 <br/>
                     </div>
                 </div>
+                
+            </section>
+            <section id="footer">
+                <div class="row">
+                    <span id="mapToggle">
+                        <span class="btn" onclick="goToNOx()">Visualizza la concentrazione NO2</a>
+                    </span>
             </section>
         </div>
     </div>`
@@ -154,6 +161,12 @@ function legendTemplateNOx(){
                         </div>
                     </div>
                 </div>
+            </section>
+            <section id="footer">
+                <div class="row" style="text-align:center">
+                    <span id="mapToggle">
+                        <a class="btn" onClick="goToMortalita()">Visualizza la mortalità per NO2</a>
+                    </span>
             </section>
         </div>
     </div>`
