@@ -116,11 +116,14 @@ function legendTemplateMortalita(){
                         <img src="styles/legend/Milano_mortalita_2_1.png" />  20 - 40 <br/>
                         <img src="styles/legend/Milano_mortalita_2_2.png" />  40 - 60 <br/>
                         <img src="styles/legend/Milano_mortalita_2_3.png" />  60 - 80 <br/>
+                        <img src="styles/legend/Milano_mortalita_2_4.png" />  80 - 100 <br/>
                     </div>
                     <div>
-                        <img src="styles/legend/Milano_mortalita_2_4.png" />  80 - 100 <br/>
                         <img src="styles/legend/Milano_mortalita_2_5.png" />  100 - 120 <br/>
-                        <img src="styles/legend/Milano_mortalita_2_6.png" />  120 - 139 <br/>
+                        <img src="styles/legend/Milano_mortalita_2_6.png" />  120 - 140 <br/>
+                        <img src="styles/legend/Milano_mortalita_2_7.png" />  140 - 160 <br/>
+                        <img src="styles/legend/Milano_mortalita_2_8.png" />  160 - 180 <br/>
+                        <img src="styles/legend/Milano_mortalita_2_9.png" />  180 - 199 <br/>
                     </div>
                 </div>
                 
