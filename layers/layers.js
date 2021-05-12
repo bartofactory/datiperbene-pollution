@@ -20,6 +20,7 @@ lyr_OpenStreetMap_0.addFilter(colorize);
 var lyr_MI_NO2_1 = new ol.layer.Image({
                             opacity: 1,
                             title: "MI_NO2",
+                            opacity: 0.750000,
                             
                             
                             source: new ol.source.ImageStatic({
