@@ -154,9 +154,12 @@ function legendTemplateNOx(){
 
                 <div id="legendGradient" class="row space-around data">
                     <div>
-                        <img src="./images/gradient_NO2.jpeg" class="gradient"/> 
+                        <img src="./images/gradient_NO2.png" class="gradient"/> 
                         <div class="row space-between">
                             <span>20</span>
+                            <span>30</span>
+                            <span>40</span>
+                            <span>50</span>
                             <span>60</span>
                         </div>
                     </div>
