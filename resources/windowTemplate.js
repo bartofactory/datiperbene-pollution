@@ -15,7 +15,8 @@ function windowTemplate(params){
 
         <section id="content">
             <div id="note">
-                <div class="row"><h3>Tasso di mortalità <small><sup>*</sup></small></h3></div>
+                <div class="row"><h3>Tasso di mortalità<small><sup>*</sup></small></h3></div>
+                <div class="additional">(stima per anno)</div>
             </div>
                 
             <div class="confidence">
@@ -40,7 +41,8 @@ function windowTemplate(params){
             </div>
 
             <div id="note">
-                <div class="row"><h3>Decessi evitabili</h3></div>
+                <div class="row"><h3>Decessi evitabili</h3><div id="alert" data-tooltip="Nel caso di una zona urbanistica con pochi abitanti la lettura delle mappe può essere distorta a causa del numero esiguo di decessi osservati"><i class="gg-danger"></i></div></div>
+                <div class="additional">(stima per anno)</div>
             </div>
                 
             <div class="confidence">
@@ -95,7 +97,7 @@ function legendTemplateMortalita(){
             <div class="row space-between">
                 <h1 class="zoneName">Mortalità per NO2</h1><i class="chevron gg-chevron-up"></i>
             </div>
-            <div id="note">
+            <div id="note" class="instruction">
                 <div class="row"><span>Seleziona un quartiere per scoprirne il dettaglio.</span></div>
             </div>
         </section>
