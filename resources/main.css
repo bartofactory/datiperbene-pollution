@@ -1,19 +1,25 @@
-
-html, body {
+html,
+body {
     background-color: #ffffff;
 }
+
 .ol-control button {
     background-color: #f8f8f8 !important;
     color: #000000 !important;
     border-radius: 5px !important;
 }
-.ol-zoom, .geolocate, .gcd-gl-control .ol-control {
-    background-color: rgba(255,255,255,.4) !important;
+
+.ol-zoom,
+.geolocate,
+.gcd-gl-control .ol-control {
+    background-color: rgba(255, 255, 255, .4) !important;
     padding: 3px !important;
 }
+
 .ol-scale-line {
     background: none !important;
 }
+
 .ol-scale-line-inner {
     border: 2px solid #f8f8f8 !important;
     border-top: none !important;
@@ -21,27 +27,34 @@ html, body {
     color: black !important;
 }
 
+
 /* --- */
+
 .search-layer {
     top: 100px;
     left: .5em;
-  }
-  .ol-touch .search-layer {
+}
+
+.ol-touch .search-layer {
     top: 130px;
-  }
+}
+
+
 /* --- */
 
-
-html, body, #map {
+html,
+body,
+#map {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
 }
 
+
 /* --- */
 
-div#infoBox{
+div#infoBox {
     font-family: 'Chivo', sans-serif;
     display: flex;
     flex-direction: column;
@@ -52,37 +65,45 @@ div#infoBox{
     max-width: 45vw;
     padding: 20px;
     background-color: white;
-    -webkit-box-shadow: 5px 5px 22px -5px rgba(0,0,0,0.3); 
-    box-shadow: 5px 5px 22px -5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     max-height: 90vh;
 }
-h1{
+
+h1 {
     margin: 0px;
     font-weight: 700;
     font-size: 32px;
     word-break: keep-all;
 }
-h3{
-    color:rgb(30, 30, 30)
+
+h3 {
+    color: rgb(30, 30, 30)
 }
-i.gg-organisation{
+
+i.gg-organisation {
     margin-right: 15px;
 }
-div#infoBox .row{
-    display: flex; 
+
+div#infoBox .row {
+    display: flex;
     flex-direction: row;
-} 
-.space-between{
+}
+
+.space-between {
     justify-content: space-between;
 }
-.space-around{
+
+.space-around {
     justify-content: space-around;
 }
-.center{
+
+.center {
     justify-content: center;
 }
-#population{
+
+#population {
     color: #717171;
     margin: 3px 0px;
     font-size: 14px;
@@ -93,7 +114,7 @@ div#infoBox .row{
     margin-right: 5px;
 }
 
-.number{
+.number {
     font-size: 36px;
     font-weight: 700;
     width: 100%;
@@ -101,7 +122,8 @@ div#infoBox .row{
     display: block;
 }
 
-.confidenceHigh, .confidenceLow{
+.confidenceHigh,
+.confidenceLow {
     font-size: 12px;
     font-weight: bold;
     width: 100%;
@@ -110,15 +132,15 @@ div#infoBox .row{
     padding-top: 15px;
 }
 
-.data{
+.data {
     text-align: center;
 }
 
-.dataLegend{
+.dataLegend {
     text-align: left;
 }
 
-.divValue{
+.divValue {
     display: block;
     min-height: 100%;
     max-width: 200px;
@@ -128,41 +150,41 @@ div#infoBox .row{
     z-index: 2;
 }
 
-
-section#content{
+section#content {
     margin: 0px 20px 0px 0px;
 }
 
-#logos{
+#logos {
     text-align: center;
 }
 
-#logos a{
+#logos a {
     margin: 10px 10px 0px 0px;
 }
 
-#source{
+#source {
     margin: 10px 0px;
 }
 
-#source a{
+#source a {
     margin-left: 10px;
     color: #717171;
     text-decoration: none;
 }
 
-#source a:hover{
+#source a:hover {
     margin-left: 10px;
     color: #717171;
     text-decoration: underline;
 }
 
-div#note{
-    color: #717171;
+div#note {
+    /* color: #717171; */
+    color: #dd5a26;
     font-size: 14px;
 }
 
-.border{
+.border {
     transform: translateY(-900%);
     width: 75%;
     border-top: 2px solid black;
@@ -171,40 +193,40 @@ div#note{
     left: 12%;
 }
 
-.confidence{
+.confidence {
     margin-top: 30px;
 }
 
-.caption{
+.caption {
     margin-bottom: 30px;
 }
 
 .zoneName {
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
-#disclaimer{
+#disclaimer {
     font-size: 10px;
     margin: 10px 0;
 }
 
-.gg-close{
+.gg-close {
     cursor: pointer;
     margin-left: 10px;
 }
 
-.topMargin{
+.topMargin {
     margin-top: 20px;
 }
 
-#legend div{
+#legend div {
     padding: 10px 15px;
     margin-top: 10px;
 }
 
-#mapToggle{
+#mapToggle {
     margin-top: 10px;
-    width:100%;
+    width: 100%;
     text-align: center;
 }
 
@@ -240,22 +262,24 @@ div#note{
     background: transparent;
 }
 
-img.gradient{
+img.gradient {
     height: 20px;
     width: 100%;
     object-fit: cover;
 }
 
-#gcd-input-query{
+#gcd-input-query {
     width: 350px;
     height: 25px;
     border: none;
     padding: 5px;
 }
-.gcd-gl-control{
+
+.gcd-gl-control {
     margin-left: 20px;
 }
-#gcd-button-control{
+
+#gcd-button-control {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -265,45 +289,47 @@ img.gradient{
     background-color: white !important;
 }
 
+
 /* .gcd-gl-expanded{
     margin: 20px;
     border: 2px solid #dadada;
 } */
 
-.geolocate{
+.geolocate {
     top: none;
     bottom: 40px !important;
     left: 20px;
     width: 30px;
     height: 30px;
 }
-.geolocate button{
+
+.geolocate button {
     width: 30px;
     height: 30px;
 }
 
-.ol-zoom{
+.ol-zoom {
     bottom: 80px !important;
     left: 20px !important;
 }
 
-.ol-zoom button{
+.ol-zoom button {
     width: 30px;
     height: 30px;
 }
 
-ul.gcd-gl-result{
+ul.gcd-gl-result {
     position: relative;
     top: 45px;
     background-color: white;
     width: 320px;
     margin-left: 20px;
     border-radius: 5px;
-    list-style-type:none;
-
+    list-style-type: none;
 }
-ul.gcd-gl-result > li{
-    margin: 0; 
+
+ul.gcd-gl-result>li {
+    margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -311,136 +337,126 @@ ul.gcd-gl-result > li{
     padding: 10px 0px;
 }
 
-ul.gcd-gl-result > li > a{
+ul.gcd-gl-result>li>a {
     text-decoration: none;
     font-size: 14px;
     color: #2c2c2c;
     padding: 0px 10px;
 }
 
-ul.gcd-gl-result > li:hover{
+ul.gcd-gl-result>li:hover {
     background-color: #e6e6e6;
 }
 
-.chevron{
+.chevron {
     visibility: hidden;
 }
 
-.instruction{
+.instruction {
     font-size: 18px !important;
 }
 
 @media (min-width: 320px) and (max-width: 710px) {
-
-    div#infoBox{
+    div#infoBox {
         position: absolute;
         bottom: 0px;
         right: 0px;
         left: 0px;
         width: 90%;
-        max-width:100%;
+        max-width: 100%;
         border-radius: 5px 5px 0px 0px;
-        -webkit-box-shadow: 5px 5px 0px -5px rgba(0,0,0,0.3); 
-        box-shadow: 5px 5px 0px -5px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 5px 5px 0px -5px rgba(0, 0, 0, 0.3);
+        box-shadow: 5px 5px 0px -5px rgba(0, 0, 0, 0.3);
     }
-
-
-    div.invisible{
+    div.invisible {
         display: none;
     }
-
-    div.visible{
+    div.visible {
         display: block;
     }
-
-    #gcd-input-query{
+    #gcd-input-query {
         width: 90vw;
     }
-
-    .gcd-gl-control{
+    .gcd-gl-control {
         margin: 10px;
     }
-
-    .geolocate{
+    .geolocate {
         bottom: 130px !important;
         left: 10px;
         width: 30px;
         height: 30px;
     }
-    .geolocate button{
+    .geolocate button {
         width: 30px;
         height: 30px;
     }
-    
-    .ol-zoom{
+    .ol-zoom {
         bottom: 170px !important;
         left: 10px !important;
     }
-
-    .chevron{
+    .chevron {
         visibility: visible;
     }
 }
-    
+
 @media (min-width: 250px) and (max-width: 320px) {
-    h1{
+    h1 {
         font-size: 28px;
     }
-
-    div#note{
+    div#note {
         font-size: 12px;
     }
-
-    .chevron{
+    .chevron {
         visibility: visible;
     }
 }
 
 [data-tooltip]:hover {
-	position: relative;
+    position: relative;
 }
+
 [data-tooltip]:hover::before {
-	all: initial;
-	font-family: Arial, Helvetica, sans-serif;
-	display: inline-block;
-	border-radius: 5px;
-	padding: 10px;
-	background-color: #1a1a1a;
-	content: attr(data-tooltip);
-	color: #f9f9f9;
-	position: absolute;
-	bottom: 100%;
-	width: 250px;
-	left: 50%;
-	transform: translate(-50%, 0);
-	margin-bottom: 15px;
-	text-align: center;
-	font-size: 14px;
+    all: initial;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    content: attr(data-tooltip);
+    color: #f9f9f9;
+    position: absolute;
+    bottom: 100%;
+    width: 250px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
     z-index: 999;
 }
 
 [data-tooltip]:hover::after {
-	all: initial;
-	display: inline-block;
-	width: 0; 
-	height: 0; 
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;		  
-	border-top: 10px solid #1a1a1a;
-	position: absolute;
-	bottom: 100%;
-	content: '';
-	left: 50%;
-	transform: translate(-50%, 0);
-	margin-bottom: 5px;
+    all: initial;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #1a1a1a;
+    position: absolute;
+    bottom: 100%;
+    content: '';
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 5px;
     z-index: 999;
 }
 
-#alert{
+#alert {
     margin-top: 15px;
     margin-left: 10px;
 }
 
-.additional{
+.additional {
     margin-top: -15px;
 }
