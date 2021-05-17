@@ -75,17 +75,6 @@ function windowTemplate(params){
                     (**) Intervalli di confidenza inferiore e superiore (95% C.I.)
                 </span>
             </div>
-            <div id="source">
-                <b>Fonte/Elaborazione</b> <br />
-                    <a href="https://www.cittadiniperlaria.org/no2-no-grazie-2020/" target="_blank">Dati NO2 No Grazie! 2020</a> <br /> 
-                    <a href="https://www.cittadiniperlaria.org/comitato-scientifico-del-progetto-no2-no-grazie/" target="_blank">Comitato scientifico NO2 No Grazie!</a><br />
-                <b>Elaborazione grafica</b> <br />
-                    <a href="https://www.globalshapersmilano.com/" target="_blank">Global Shapers Milan Hub</span>
-            </div>
-            <div id="logos">
-                <a href="https://www.cittadiniperlaria.org/" target="_blank"><img src="./images/CPA.png" alt="Cittadini per l'aria"></a>
-                <a href="https://www.globalshapersmilano.com/" target="_blank"><img src="./images/Milan_GS.png" alt="Global Shapers Milano"></a>
-            </div>
         </section>
 
     </div>`
@@ -131,10 +120,22 @@ function legendTemplateMortalita(){
                 
             </section>
             <section id="footer">
+                <div id="source">
+                    <b>Fonte/Elaborazione</b> <br />
+                        <a href="https://www.cittadiniperlaria.org/no2-no-grazie-2020/" target="_blank">Dati NO2 No Grazie! 2020</a> <br /> 
+                        <a href="https://www.cittadiniperlaria.org/comitato-scientifico-del-progetto-no2-no-grazie/" target="_blank">Comitato scientifico NO2 No Grazie!</a><br />
+                    <b>Elaborazione grafica</b> <br />
+                        <a href="https://www.globalshapersmilano.com/" target="_blank">Global Shapers Milan Hub</span>
+                </div>
+                <div id="logos">
+                    <a href="https://www.cittadiniperlaria.org/" target="_blank"><img src="./images/CPA.png" alt="Cittadini per l'aria"></a>
+                    <a href="https://www.globalshapersmilano.com/" target="_blank"><img src="./images/Milan_GS.png" alt="Global Shapers Milano"></a>
+                </div>
                 <div class="row">
                     <span id="mapToggle">
                         <span class="btn" onclick="goToNOx()">Visualizza la concentrazione NO2</a>
                     </span>
+                </div>
             </section>
         </div>
     </div>`
@@ -168,10 +169,22 @@ function legendTemplateNOx(){
                 </div>
             </section>
             <section id="footer">
+                <div id="source">
+                    <b>Fonte/Elaborazione</b> <br />
+                        <a href="https://www.cittadiniperlaria.org/no2-no-grazie-2020/" target="_blank">Dati NO2 No Grazie! 2020</a> <br /> 
+                        <a href="https://www.cittadiniperlaria.org/comitato-scientifico-del-progetto-no2-no-grazie/" target="_blank">Comitato scientifico NO2 No Grazie!</a><br />
+                    <b>Elaborazione grafica</b> <br />
+                        <a href="https://www.globalshapersmilano.com/" target="_blank">Global Shapers Milan Hub</span>
+                </div>
+                <div id="logos">
+                    <a href="https://www.cittadiniperlaria.org/" target="_blank"><img src="./images/CPA.png" alt="Cittadini per l'aria"></a>
+                    <a href="https://www.globalshapersmilano.com/" target="_blank"><img src="./images/Milan_GS.png" alt="Global Shapers Milano"></a>
+                </div>
                 <div class="row" style="text-align:center">
                     <span id="mapToggle">
                         <a class="btn" onClick="goToMortalita()">Visualizza la mortalità per NO2</a>
                     </span>
+                </div>
             </section>
         </div>
     </div>`
