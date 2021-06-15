@@ -131,11 +131,6 @@ function legendTemplateMortalita(){
                     <a href="https://www.cittadiniperlaria.org/" target="_blank"><img src="./images/CPA.png" alt="Cittadini per l'aria"></a>
                     <a href="https://www.globalshapersmilano.com/" target="_blank"><img src="./images/Milan_GS.png" alt="Global Shapers Milano"></a>
                 </div>
-                <div class="row">
-                    <span id="mapToggle">
-                        <span class="btn" onclick="goToNOx()">Visualizza la concentrazione NO2</a>
-                    </span>
-                </div>
             </section>
         </div>
     </div>`
@@ -159,7 +154,7 @@ function legendTemplateNOx(){
                     <div>
                         <img src="./images/gradient_NO2.png" class="gradient"/> 
                         <div class="row space-between">
-                            <span>20</span>
+                            <span>18</span>
                             <span>30</span>
                             <span>40</span>
                             <span>50</span>
@@ -179,11 +174,6 @@ function legendTemplateNOx(){
                 <div id="logos">
                     <a href="https://www.cittadiniperlaria.org/" target="_blank"><img src="./images/CPA.png" alt="Cittadini per l'aria"></a>
                     <a href="https://www.globalshapersmilano.com/" target="_blank"><img src="./images/Milan_GS.png" alt="Global Shapers Milano"></a>
-                </div>
-                <div class="row" style="text-align:center">
-                    <span id="mapToggle">
-                        <a class="btn" onClick="goToMortalita()">Visualizza la mortalità per NO2</a>
-                    </span>
                 </div>
             </section>
         </div>

@@ -68,7 +68,7 @@ layerSwitcher.hidePanel = function() {};
 layerSwitcher.showPanel();
 
 
-map.getView().fit([1005924.213300, 5681883.891033, 1045783.607613, 5708966.328806], map.getSize());
+map.getView().fit([1565487.551979, 4978434.903656, 1606415.962049, 5003038.871673], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -108,7 +108,7 @@ var featureOverlay = new ol.layer.Vector({
     updateWhileInteracting: true // optional, for instant visual feedback
 });
 
-var doHighlight = true;
+var doHighlight = false;
 var doHover = false;
 
 var highlight;
@@ -261,49 +261,49 @@ var onPointerMove = function(evt) {
 };
 
 var onSingleClick = function(evt) {
-    if (doHover) {
-        return;
-    }
-    if (sketch) {
-        return;
-    }
-    var pixel = map.getEventPixel(evt.originalEvent);
-    var coord = evt.coordinate;
-    var popupField;
-    var currentFeature;
-    var currentFeatureKeys;
-    var clusteredFeatures;
-    var popupText = '<ul>';
-    var featurePerLayer = []
-    map.forEachFeatureAtPixel(pixel, function(feature, layer) {
-        currentFeature = feature;
-        currentFeatureKeys = currentFeature.getKeys();
-        featurePerLayer.push(currentFeature)
+    // if (doHover) {
+    //     return;
+    // }
+    // if (sketch) {
+    //     return;
+    // }
+    // var pixel = map.getEventPixel(evt.originalEvent);
+    // var coord = evt.coordinate;
+    // var popupField;
+    // var currentFeature;
+    // var currentFeatureKeys;
+    // var clusteredFeatures;
+    // var popupText = '<ul>';
+    // var featurePerLayer = []
+    // map.forEachFeatureAtPixel(pixel, function(feature, layer) {
+    //     currentFeature = feature;
+    //     currentFeatureKeys = currentFeature.getKeys();
+    //     featurePerLayer.push(currentFeature)
 
         
-    });
-    var viewProjection = map.getView().getProjection();
-    var viewResolution = map.getView().getResolution();
-    for (i = 0; i < wms_layers.length; i++) {
-        if (wms_layers[i][1]) {
-            var url = wms_layers[i][0].getSource().getGetFeatureInfoUrl(
-                evt.coordinate, viewResolution, viewProjection,
-                {
-                    'INFO_FORMAT': 'text/html',
-                });
-        }
-    }
+    // });
+    // var viewProjection = map.getView().getProjection();
+    // var viewResolution = map.getView().getResolution();
+    // for (i = 0; i < wms_layers.length; i++) {
+    //     if (wms_layers[i][1]) {
+    //         var url = wms_layers[i][0].getSource().getGetFeatureInfoUrl(
+    //             evt.coordinate, viewResolution, viewProjection,
+    //             {
+    //                 'INFO_FORMAT': 'text/html',
+    //             });
+    //     }
+    // }
 
-    if (popupText) {       
-    } else {
-        container.style.display = 'none';
-        closer.blur();
-    }
+    // if (popupText) {       
+    // } else {
+    //     container.style.display = 'none';
+    //     closer.blur();
+    // }
 
-    if(featurePerLayer.length > 0){
-        var popupContent = generatePopup(featurePerLayer)
-        openWindow(popupContent)
-    }
+    // if(featurePerLayer.length > 0){
+    //     var popupContent = generatePopup(featurePerLayer)
+    //     openWindow(popupContent)
+    // }
 };
 
 

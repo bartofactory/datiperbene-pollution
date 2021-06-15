@@ -17,47 +17,68 @@ var wms_layers = [];
 var colorize = new ol.filter.Colorize({ operation:'grayscale', value: 1 });
 lyr_OpenStreetMap_0.addFilter(colorize);
 
-var lyr_MI_NO2_1 = new ol.layer.Image({
-                            opacity: 1,
-                            title: "MI_NO2",
-                            opacity: 0.75,
-                            
-                            source: new ol.source.ImageStatic({
-                               url: "./layers/MI_NO2_1.png",
-    attributions: ' ',
-                                projection: 'EPSG:3857',
-                                alwaysInRange: true,
-                                imageExtent: [1007481.109129, 5683401.844363, 1032303.818043, 5706381.939219]
-                            })
-                        });
-var format_Milano_mortalita_2 = new ol.format.GeoJSON();
-var features_Milano_mortalita_2 = format_Milano_mortalita_2.readFeatures(json_Milano_mortalita_2, 
+var format_MI_NO2_1 = new ol.format.GeoJSON();
+var features_MI_NO2_1 = format_MI_NO2_1.readFeatures(json_MI_NO2_1, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Milano_mortalita_2 = new ol.source.Vector({
+var jsonSource_MI_NO2_1 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Milano_mortalita_2.addFeatures(features_Milano_mortalita_2);
-var lyr_Milano_mortalita_2 = new ol.layer.Vector({
+jsonSource_MI_NO2_1.addFeatures(features_MI_NO2_1);
+var lyr_MI_NO2_1 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_Milano_mortalita_2, 
-                style: style_Milano_mortalita_2,
-                'opacity': 0.800000,
+                source:jsonSource_MI_NO2_1, 
+                style: style_MI_NO2_1,
                 interactive: true,
-    title: 'Milano_mortalita<br />\
-    <img src="styles/legend/Milano_mortalita_2_0.png" /> 0 - 20<br />\
-    <img src="styles/legend/Milano_mortalita_2_1.png" /> 20 - 40<br />\
-    <img src="styles/legend/Milano_mortalita_2_2.png" /> 40 - 60<br />\
-    <img src="styles/legend/Milano_mortalita_2_3.png" /> 60 - 80<br />\
-    <img src="styles/legend/Milano_mortalita_2_4.png" /> 80 - 100<br />\
-    <img src="styles/legend/Milano_mortalita_2_5.png" /> 100 - 120<br />\
-    <img src="styles/legend/Milano_mortalita_2_6.png" /> 120 - 139<br />'
+    title: 'MI_NO2<br />\
+    <img src="styles/legend/MI_NO2_1_0.png" /> 18 - 19<br />\
+    <img src="styles/legend/MI_NO2_1_1.png" /> 19 - 20<br />\
+    <img src="styles/legend/MI_NO2_1_2.png" /> 20 - 21<br />\
+    <img src="styles/legend/MI_NO2_1_3.png" /> 21 - 22<br />\
+    <img src="styles/legend/MI_NO2_1_4.png" /> 22 - 23<br />\
+    <img src="styles/legend/MI_NO2_1_5.png" /> 23 - 24<br />\
+    <img src="styles/legend/MI_NO2_1_6.png" /> 24 - 25<br />\
+    <img src="styles/legend/MI_NO2_1_7.png" /> 25 - 26<br />\
+    <img src="styles/legend/MI_NO2_1_8.png" /> 26 - 27<br />\
+    <img src="styles/legend/MI_NO2_1_9.png" /> 27 - 28<br />\
+    <img src="styles/legend/MI_NO2_1_10.png" /> 28 - 29<br />\
+    <img src="styles/legend/MI_NO2_1_11.png" /> 29 - 30<br />\
+    <img src="styles/legend/MI_NO2_1_12.png" /> 30 - 31<br />\
+    <img src="styles/legend/MI_NO2_1_13.png" /> 31 - 32<br />\
+    <img src="styles/legend/MI_NO2_1_14.png" /> 32 - 33<br />\
+    <img src="styles/legend/MI_NO2_1_15.png" /> 33 - 34<br />\
+    <img src="styles/legend/MI_NO2_1_16.png" /> 34 - 35<br />\
+    <img src="styles/legend/MI_NO2_1_17.png" /> 35 - 36<br />\
+    <img src="styles/legend/MI_NO2_1_18.png" /> 36 - 37<br />\
+    <img src="styles/legend/MI_NO2_1_19.png" /> 37 - 38<br />\
+    <img src="styles/legend/MI_NO2_1_20.png" /> 38 - 39<br />\
+    <img src="styles/legend/MI_NO2_1_21.png" /> 39 - 40<br />\
+    <img src="styles/legend/MI_NO2_1_22.png" /> 40 - 41<br />\
+    <img src="styles/legend/MI_NO2_1_23.png" /> 41 - 42<br />\
+    <img src="styles/legend/MI_NO2_1_24.png" /> 42 - 43<br />\
+    <img src="styles/legend/MI_NO2_1_25.png" /> 43 - 44<br />\
+    <img src="styles/legend/MI_NO2_1_26.png" /> 44 - 45<br />\
+    <img src="styles/legend/MI_NO2_1_27.png" /> 45 - 46<br />\
+    <img src="styles/legend/MI_NO2_1_28.png" /> 46 - 47<br />\
+    <img src="styles/legend/MI_NO2_1_29.png" /> 47 - 48<br />\
+    <img src="styles/legend/MI_NO2_1_30.png" /> 48 - 49<br />\
+    <img src="styles/legend/MI_NO2_1_31.png" /> 49 - 50<br />\
+    <img src="styles/legend/MI_NO2_1_32.png" /> 50 - 51<br />\
+    <img src="styles/legend/MI_NO2_1_33.png" /> 51 - 52<br />\
+    <img src="styles/legend/MI_NO2_1_34.png" /> 52 - 53<br />\
+    <img src="styles/legend/MI_NO2_1_35.png" /> 53 - 54<br />\
+    <img src="styles/legend/MI_NO2_1_36.png" /> 54 - 55<br />\
+    <img src="styles/legend/MI_NO2_1_37.png" /> 55 - 56<br />\
+    <img src="styles/legend/MI_NO2_1_38.png" /> 56 - 57<br />\
+    <img src="styles/legend/MI_NO2_1_39.png" /> 57 - 58<br />\
+    <img src="styles/legend/MI_NO2_1_40.png" /> 58 - 59<br />\
+    <img src="styles/legend/MI_NO2_1_41.png" /> 59 - 60<br />'
         });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_MI_NO2_1.setVisible(true);lyr_Milano_mortalita_2.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_MI_NO2_1,lyr_Milano_mortalita_2];
-lyr_Milano_mortalita_2.set('fieldAliases', {'ID_NIL': 'ID_NIL', 'AreaHA': 'AreaHA', 'AreaMQ': 'AreaMQ', 'NIL_lower': 'NIL_lower', 'Pop': 'Pop', 'c20_tasso': 'c20_tasso', 'c40_tasso': 'c40_tasso', });
-lyr_Milano_mortalita_2.set('fieldImages', {'ID_NIL': 'Range', 'AreaHA': 'TextEdit', 'AreaMQ': 'TextEdit', 'NIL_lower': 'TextEdit', 'Pop': 'TextEdit', 'c20_tasso': 'TextEdit', 'c40_tasso': 'TextEdit', });
-lyr_Milano_mortalita_2.set('fieldLabels', {'ID_NIL': 'inline label', 'AreaHA': 'inline label', 'AreaMQ': 'inline label', 'NIL_lower': 'header label', 'Pop': 'inline label', 'c20_tasso': 'header label', 'c40_tasso': 'inline label', });
-lyr_Milano_mortalita_2.on('precompose', function(evt) {
+lyr_OpenStreetMap_0.setVisible(true);lyr_MI_NO2_1.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_MI_NO2_1];
+lyr_MI_NO2_1.set('fieldAliases', {'VALUE': 'VALUE', });
+lyr_MI_NO2_1.set('fieldImages', {'VALUE': 'TextEdit', });
+lyr_MI_NO2_1.set('fieldLabels', {'VALUE': 'no label', });
+lyr_MI_NO2_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
